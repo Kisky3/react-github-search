@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import axios from 'axios';
+import url from '../../asset/setting';
 
 class Search extends Component {
     search = () => {
@@ -8,7 +9,10 @@ class Search extends Component {
         const {keyWordElement:{value: keyWord}} = this;
         
         // send request
-
+        axios.get(url + keyWord).then(
+            response => {console.log(response.data)},
+            error => {console.log(error)}
+        )
     }
     render() {
         return (
