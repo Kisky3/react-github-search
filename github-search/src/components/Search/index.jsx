@@ -10,7 +10,7 @@ class Search extends Component {
         
         // send request
         axios.get(url + keyWord).then(
-            response => {console.log(response.data)},
+            response => {this.props.getUserData(response.data)},
             error => {console.log(error)}
         )
     }
