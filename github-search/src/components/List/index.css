@@ -1,5 +1,18 @@
-.list {
+.list-container {
     width: 70%;
+    margin: auto;
+}
+
+.list-container > span {
+    display: block;
+    font-size: 20px;
+    color: rgb(73, 71, 71);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.list {
+    width: 100%;
     margin: auto;
     overflow: hidden;
     background: #80808014;

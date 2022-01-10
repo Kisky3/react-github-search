@@ -5,22 +5,24 @@ import Loading from './components/Loading'
 
 class App extends Component {
   state = {
-    userData: {
-      total_count: 0,
-      // avatar_url, html_url, login
-      items: []
-    },
-    loading: false,
+    users: [], 
+    showLoading: false,
   }
   getUserData = (data) => {
-    console.log(data);
+    this.setState({users: data});
   }
+
+  setLoadingState = (state) => {
+    this.setState({showLoading: state});
+  }
+
   render() {
+    const {users,showLoading } = this.state
     return (
       <div>
-        <Loading />
-        <Search getUserData={this.getUserData}/>
-        <List/>
+        <Loading showLoading={showLoading} />
+        <Search getUserData={this.getUserData} setLoadingState={this.setLoadingState} />
+        <List users={users}/>
       </div>
     );
   }

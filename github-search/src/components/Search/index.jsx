@@ -7,10 +7,14 @@ class Search extends Component {
     search = () => {
         // get user's input, constructure and rename var
         const {keyWordElement:{value: keyWord}} = this;
+        this.props.setLoadingState(true);
         
         // send request
         axios.get(url + keyWord).then(
-            response => {this.props.getUserData(response.data)},
+            response => {
+                this.props.getUserData(response.data);
+                this.props.setLoadingState(false);
+            },
             error => {console.log(error)}
         )
     }

@@ -4,15 +4,31 @@ import './index.css';
 
 class List extends Component {
     render() {
-        return (
-            <div className="list">
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-                <Item />
-            </div>
-        );
+        const { total_count, items } = this.props.users
+
+        if (total_count && items) {
+            return (
+                <div className="list-container">
+                    <span>Total: {total_count}, show 30 records </span>
+                    <div className="list">
+                        {
+                            items.map((userObj) => {
+                                return (
+                                    <Item userObj={userObj} key={userObj.id}/>
+                                )
+                            })
+
+                        }
+                    </div>
+                </div>
+            )
+        } else {
+            return (
+                <div className="list-container">
+                    <span>Nothing here..</span>
+                </div>
+            )
+        }
     }
 }
 
