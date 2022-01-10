@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import List from './components/List'
 import Search from './components/Search'
 import Loading from './components/Loading'
+import './App.css';
 
 class App extends Component {
   state = {
@@ -19,7 +20,8 @@ class App extends Component {
   render() {
     const {users,showLoading } = this.state
     return (
-      <div>
+      <div className="container">
+        <header>Search Github Users</header>
         <Loading showLoading={showLoading} />
         <Search getUserData={this.getUserData} setLoadingState={this.setLoadingState} />
         <List users={users}/>
