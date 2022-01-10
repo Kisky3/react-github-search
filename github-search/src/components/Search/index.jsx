@@ -17,6 +17,8 @@ class Search extends Component {
             },
             error => {console.log(error)}
         )
+        // reset input value
+        this.keyWordElement.value = "";
     }
     render() {
         return (
