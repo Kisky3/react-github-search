@@ -9,6 +9,15 @@
 
 .loading-mark {
     position:absolute;
-    top: 45%;
+    top: 42%;
+    left: 45%;
+}
+
+.loading-text {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 55%;
     left: 45%;
 }
