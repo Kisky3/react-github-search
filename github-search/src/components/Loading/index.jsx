@@ -5,8 +5,8 @@ export default class Loading extends Component {
     render() {
         const {showLoading} = this.props
         return (
-            <div style={{display: showLoading ? 'block': 'none'}} className="loading">
-            <div>
+            <div style={{display: showLoading ? 'block': 'none'}}>
+            <div className="loading">
                 <Loader
                     type="Puff"
                     color="#ccc"
