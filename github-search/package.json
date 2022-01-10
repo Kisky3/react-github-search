@@ -13,10 +13,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "deploy": "yarn build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "http://Kisky3.github.io/myapp",
   "eslintConfig": {
     "extends": [
       "react-app",
