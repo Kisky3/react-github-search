@@ -9,7 +9,7 @@ class List extends Component {
         if (total_count && items) {
             return (
                 <div className="list-container">
-                    <span>Total: {total_count}, show 30 records </span>
+                    <span>Total: {total_count}</span>
                     <div className="list">
                         {
                             items.map((userObj) => {
