@@ -1,4 +1,6 @@
-# Getting Started 
+# react github search
+Search github users.
+
 
 ### `npm start`
 
