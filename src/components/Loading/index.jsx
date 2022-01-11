@@ -1,22 +1,23 @@
-import Loader from "react-loader-spinner";
+import ReactLoading from 'react-loading';
 import { Component } from 'react';
 import './index.css'
-export default class Loading extends Component {
+class Loading extends Component {
     render() {
         const {showLoading} = this.props
         return (
             <div style={{display: showLoading ? 'block': 'none'}}>
-            <div className="loading">
-                <Loader
-                    type="Puff"
-                    color="#ccc"
-                    height={150}
-                    width={150}
-                    className="loading-mark"
-                    timeout={10000}
-                />
-            </div>
+                <div className="loading">
+                    <ReactLoading
+                        type={"balls"}
+                        color={"#ccc"}
+                        height={150}
+                        width={150}
+                        className="loading-mark"
+                    />
+                </div>
             </div>
         );
     }
 }
+
+export default Loading;
