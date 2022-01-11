@@ -14,6 +14,8 @@ build and deploy to github pages.
 ### Preview
 https://kisky3.github.io/react-github-search/
 
+![kisky3 github io_react-github-search_](https://user-images.githubusercontent.com/23165804/148971771-f436efa2-f403-4dc3-a272-127203e3ef76.png)
+
 
 
 
