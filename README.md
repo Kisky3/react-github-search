@@ -11,7 +11,10 @@ You may also see any lint errors in the console.
 ### `npm run deploy`
 build and deploy to github pages.
 
-### Previe
+### Preview
+https://kisky3.github.io/react-github-search/
+
+
 
 
 
