@@ -1,10 +1,13 @@
 .search{
     width: 70%;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-input {
     display: block;
+    flex-grow: 1;
     outline-style: none ;
     border: 1px solid #ccc; 
     border-radius: 3px;
