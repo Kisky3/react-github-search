@@ -3,6 +3,7 @@ import List from './components/List'
 import Search from './components/Search'
 import Loading from './components/Loading'
 import ParticlesBg from 'particles-bg';
+import Header from './components/Header'
 import './App.css';
 
 class App extends Component {
@@ -26,7 +27,7 @@ class App extends Component {
       <div>
       <ParticlesBg type="cobweb" bg={bg}/>
       <div className="container">
-        <header>Search Github Users</header>
+        <Header/>
         <Loading showLoading={showLoading} />
         <Search getUserData={this.getUserData} setLoadingState={this.setLoadingState} />
         <List users={users}/>
