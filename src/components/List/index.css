@@ -1,6 +1,7 @@
 .list-container {
     width: 70%;
     margin: auto;
+    background: white;
 }
 
 .list-container > span {

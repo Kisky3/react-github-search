@@ -7,6 +7,10 @@ class Search extends Component {
     search = () => {
         // get user's input, constructure and rename var
         const {keyWordElement:{value: keyWord}} = this;
+        if(keyWord === "") {
+            alert("input plz");
+            return
+        }
         this.props.setLoadingState(true);
         
         // send request
